@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <style>
+.list-inline{
+     text-align: right;
+     margin-top: 0px;
+    }
+    nav{
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    min-height:8vh;
+    background-color:rgb(249, 177, 43);
+    position: static;
+    width: 100%;
+    top: 10px;
+    }
+a{
+    text-decoration: none;
+}
+nav a{
+    color:black;
+}
+nav a:hover{
+    color:#f84258;
+    text-decoration: none;
+
+}
+.nav-links{
+    display:flex;
+    list-style: none;
+    width:50%;
+    justify-content: space-around;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size:14px;
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    padding-top: 80px;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+}
+
+.quantity input {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+.footer{
+    text-align: left;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+          <h3>🍴RestoEat</a></h3>
+        </div>
+  
+        <ul class="nav-links">
+            <li><a href="/Home.html">Home</a></li>
+            <li><a href="/Menu.html">Menu</a></li>
+            <li><a href="/About.html">About</a></li>
+            <li><a href="/Login.html" id="login">Login</a></li>
+            <li><a href="/Bookatable.html">Book A Table</a></li>
+          </ul>
+        </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3"><img src="/Image/Tandoori Paneer Tikka.jpeg" height="190" width="250"><img src="veg-icon.webp" width="10px" height="15px">  Tandoori Paneer Tikka        ₹130</div>
+            <div class="col-sm-3"><img src="/Image/Malai Paneer Tikka.jpeg" height="190" width="250"><img src="veg-icon.webp" width="10px" height="15px">&#160;Malai Paneer Tikka &#160;&#160;&#160; &#160; &#160; &#160; &nbsp&nbsp&#160; &#160;₹120</div>
+            <div class="col-sm-3"><img src="/Image/Hare-Bhare Kabab.jpeg" height="190" width="250"><img src="veg-icon.webp" width="10px" height="15px">&#160;Hare-Bhare Kabab &#160; &#160; &#160; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#160;₹169</div>
+            <div class="col-sm-3"><img src="/Image/" height="190" width="250"><img src="veg-icon.webp" width="10px" height="15px">&#160;Dahi ke Kabab &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#160;₹130</div>
+        </div><br>
+        <div class="row">
+            <div class="col-sm-3"><div class="quantity"><button class="minus">-</button><input type="text" value="01" class="num"><button class="plus">+</button>&#160;&#160;<button type="button" onclick="cart()" class="btn btn-primary">🛒ADD TO CART</button></div></div>
+            <div class="col-sm-3"><div class="quantity"><button class="minus">-</button><input type="text" value="01" class="num"><button class="plus">+</button>&#160;&#160;<button type="button" onclick="cart()" class="btn btn-primary">🛒ADD TO CART</button></div></div>
+            <div class="col-sm-3"><div class="quantity"><button class="minus">-</button><input type="text" value="01" class="num"><button class="plus">+</button>&#160;&#160;<button type="button" onclick="cart()" class="btn btn-primary">🛒ADD TO CART</button></div></div>
+            <div class="col-sm-3"><div class="quantity"><button class="minus">-</button><input type="text" value="01" class="num"><button class="plus">+</button>&#160;&#160;<button type="button" onclick="cart()" class="btn btn-primary">🛒ADD TO CART</button></div></div>
+        </div><br><br>
+        
+        <div class="row">
+            <div class="col-sm-3"><img src="/Image/Shahi Paneer.jpeg" height="190" width="250"><pre class="text"><img src="veg-icon.webp" width="10px" height="15px">  Shahi Paneer             ₹130</h5></pre></div>
+            <div class="col-sm-3"><img src="/Image/Kadhai Paneer.jpeg" height="190" width="250"><img src="veg-icon.webp" width="10px" height="15px">&#160;Kadhai Paneer</div>
+            <div class="col-sm-3"><img src="/Image/Malai Kofta.jpeg" height="190" width="250"><img src="veg-icon.webp" width="10px" height="15px">&#160;Malai Kofta</div>
+            <div class="col-sm-3"><img src="/Image/Dal Makhani.jpeg" height="190" width="250"><img src="veg-icon.webp" width="10px" height="15px">&#160;Dal Makhani</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3"><div class="quantity"><button class="minus">-</button><input type="text" value="01" class="num"><button class="plus">+</button>&#160;&#160;<button type="button" onclick="cart()" class="btn btn-primary">🛒ADD TO CART</button></div></div>
+            <div class="col-sm-3"><div class="quantity"><button class="minus">-</button><input type="text" value="01" class="num"><button class="plus">+</button>&#160;&#160;<button type="button" onclick="cart()" class="btn btn-primary">🛒ADD TO CART</button></div></div>
+            <div class="col-sm-3"><div class="quantity"><button class="minus">-</button><input type="text" value="01" class="num"><button class="plus">+</button>&#160;&#160;<button type="button" onclick="cart()" class="btn btn-primary">🛒ADD TO CART</button></div></div>
+            <div class="col-sm-3"><div class="quantity"><button class="minus">-</button><input type="text" value="01" class="num"><button class="plus">+</button>&#160;&#160;<button type="button" onclick="cart()" class="btn btn-primary">🛒ADD TO CART</button></div></div>
+        </div><br><br>
+        <div class="row">
+            <div class="col-sm-3"><img src="/Image/" height="190" width="250"><img src="veg-icon.webp" width="10px" height="15px">&#160;Shahi Paneer</div>
+            <div class="col-sm-3"><img src="/Image/Malai Paneer Tikka." height="190" width="250"><img src="veg-icon.webp" width="10px" height="15px">&#160;Kadhai Paneer</div>
+            <div class="col-sm-3"><img src="/Image/Malai Paneer Tikka." height="190" width="250"><img src="veg-icon.webp" width="10px" height="15px">&#160;Malai Kofta</div>
+            <div class="col-sm-3"><img src="/Image/Malai Paneer Tikka." height="190" width="250"><img src="veg-icon.webp" width="10px" height="15px">&#160;Dal Makhani</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3"><div class="quantity"><button class="minus">-</button><input type="text" value="01" class="num"><button class="plus">+</button>&#160;&#160;<button type="button" onclick="cart()" class="btn btn-primary">🛒ADD TO CART</button></div></div>
+            <div class="col-sm-3"><div class="quantity"><button class="minus">-</button><input type="text" value="01" class="num"><button class="plus">+</button>&#160;&#160;<button type="button" onclick="cart()" class="btn btn-primary">🛒ADD TO CART</button></div></div>
+            <div class="col-sm-3"><div class="quantity"><button class="minus">-</button><input type="text" value="01" class="num"><button class="plus">+</button>&#160;&#160;<button type="button" onclick="cart()" class="btn btn-primary">🛒ADD TO CART</button></div></div>
+            <div class="col-sm-3"><div class="quantity"><button class="minus">-</button><input type="text" value="01" class="num"><button class="plus">+</button>&#160;&#160;<button type="button" onclick="cart()" class="btn btn-primary">🛒ADD TO CART</button></div></div>
+        </div><br><br>
+        <div class="row">
+            <div class="col-sm-3"><img src="/Image/Malai Paneer Tikka." height="190" width="250"><img src="veg-icon.webp" width="10px" height="15px">&#160;Tandoori Roti</div>
+            <div class="col-sm-3"><img src="/Image/Malai Paneer Tikka." height="190" width="250"><img src="veg-icon.webp" width="10px" height="15px">&#160;Butter Naan</div>
+            <div class="col-sm-3"><img src="/Image/Malai Paneer Tikka." height="190" width="250"><img src="veg-icon.webp" width="10px" height="15px">&#160;Laccha Parantha</div>
+            <div class="col-sm-3"><img src="/Image/Malai Paneer Tikka." height="190" width="250"><img src="veg-icon.webp" width="10px" height="15px">&#160;Roomali Roti</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3"><div class="quantity"><button class="minus">-</button><input type="text" value="01" class="num"><button class="plus">+</button>&#160;&#160;<button type="button" onclick="cart()" class="btn btn-primary">🛒ADD TO CART</button></div></div>
+            <div class="col-sm-3"><div class="quantity"><button class="minus">-</button><input type="text" value="01" class="num"><button class="plus">+</button>&#160;&#160;<button type="button" onclick="cart()" class="btn btn-primary">🛒ADD TO CART</button></div></div>
+            <div class="col-sm-3"><div class="quantity"><button class="minus">-</button><input type="text" value="01" class="num"><button class="plus">+</button>&#160;&#160;<button type="button" onclick="cart()" class="btn btn-primary">🛒ADD TO CART</button></div></div>
+            <div class="col-sm-3"><div class="quantity"><button class="minus">-</button><input type="text" value="01" class="num"><button class="plus">+</button>&#160;&#160;<button type="button" onclick="cart()" class="btn btn-primary">🛒ADD TO CART</button></div></div>
+        </div><br><br>
+        <div class="row">
+            <div class="col-sm-3"><img src="/Image/Malai Paneer Tikka." height="190" width="250"><img src="veg-icon.webp" width="10px" height="15px">&#160; Steam Rice</div>
+            <div class="col-sm-3"><img src="/Image/Malai Paneer Tikka." height="190" width="250"><img src="veg-icon.webp" width="10px" height="15px">&#160; Jeera Rice</div>
+            <div class="col-sm-3"><img src="/Image/Malai Paneer Tikka." height="190" width="250"><img src="veg-icon.webp" width="10px" height="15px">&#160; Soya Dum Biryani</div>
+            <div class="col-sm-3"><img src="/Image/Malai Paneer Tikka." height="190" width="250"><img src="veg-icon.webp" width="10px" height="15px">&#160; Mix Veg. Pulao</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3"><div class="quantity"><button class="minus">-</button><input type="text" value="01" class="num"><button class="plus">+</button>&#160;&#160;<button type="button" onclick="cart()" class="btn btn-primary">🛒ADD TO CART</button></div></div>
+            <div class="col-sm-3"><div class="quantity"><button class="minus">-</button><input type="text" value="01" class="num"><button class="plus">+</button>&#160;&#160;<button type="button" onclick="cart()" class="btn btn-primary">🛒ADD TO CART</button></div></div>
+            <div class="col-sm-3"><div class="quantity"><button class="minus">-</button><input type="text" value="01" class="num"><button class="plus">+</button>&#160;&#160;<button type="button" onclick="cart()" class="btn btn-primary">🛒ADD TO CART</button></div></div>
+            <div class="col-sm-3"><div class="quantity"><button class="minus">-</button><input type="text" value="01" class="num"><button class="plus">+</button>&#160;&#160;<button type="button" onclick="cart()" class="btn btn-primary">🛒ADD TO CART</button></div></div>
+        </div><br><br>
+        <div class="row">
+            <div class="col-sm-3"><img src="/Image/Malai Paneer Tikka." height="190" width="250"><img src="veg-icon.webp" width="10px" height="15px">&#160; Rava Kesri</div>
+            <div class="col-sm-3"><img src="/Image/Malai Paneer Tikka." height="190" width="250"><img src="veg-icon.webp" width="10px" height="15px">&#160; Gulab Jamun</div>
+            <div class="col-sm-3"><img src="/Image/Malai Paneer Tikka." height="190" width="250"><img src="veg-icon.webp" width="10px" height="15px">&#160; Lava Cake</div>
+            <div class="col-sm-3"><img src="/Image/Malai Paneer Tikka." height="190" width="250"><img src="veg-icon.webp" width="10px" height="15px">&#160; Shake</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3"><div class="quantity"><button class="minus">-</button><input type="text" value="01" class="num"><button class="plus">+</button>&#160;&#160;<button type="button" onclick="cart()" class="btn btn-primary">🛒ADD TO CART</button></div></div>
+            <div class="col-sm-3"><div class="quantity"><button class="minus">-</button><input type="text" value="01" class="num"><button class="plus">+</button>&#160;&#160;<button type="button" onclick="cart()" class="btn btn-primary">🛒ADD TO CART</button></div></div>
+            <div class="col-sm-3"><div class="quantity"><button class="minus">-</button><input type="text" value="01" class="num"><button class="plus">+</button>&#160;&#160;<button type="button" onclick="cart()" class="btn btn-primary">🛒ADD TO CART</button></div></div>
+            <div class="col-sm-3"><div class="quantity"><button class="minus">-</button><input type="text" value="01" class="num"><button class="plus">+</button>&#160;&#160;<button type="button" onclick="cart()" class="btn btn-primary">🛒ADD TO CART</button></div></div>
+        </div><br><br>
+        <div class="row">
+            <div class="col-sm-3"><video  height="190" width="250" autoplay ><source src="/novila-misastra-4V3GvMFzCak-unsplash_animation.mp4" ><img src="veg-icon.webp" width="10px" height="15px">&#160; Vanilla/Strawberry</div>
+            <div class="col-sm-3"><img src="/Chocolate.jpeg" height="190" width="250"><img src="veg-icon.webp" width="10px" height="15px">&#160; Chocolate</div>
+            <div class="col-sm-3"><img src="/Black Currant.jpeg" height="190" width="250"><img src="veg-icon.webp" width="10px" height="15px">&#160; Black Currant</div>
+            <div class="col-sm-3"><img src="/Mango.jpeg" height="190" width="250"><img src="veg-icon.webp" width="10px" height="15px">&#160; Mango</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3"><div class="quantity"><button class="minus">-</button><input type="text" value="01" class="num"><button class="plus">+</button>&#160;&#160;<button type="button" onclick="cart()" class="btn btn-primary">🛒ADD TO CART</button></div></div>
+            <div class="col-sm-3"><div class="quantity"><button class="minus">-</button><input type="text" value="01" class="num"><button class="plus">+</button>&#160;&#160;<button type="button" onclick="cart()" class="btn btn-primary">🛒ADD TO CART</button></div></div>
+            <div class="col-sm-3"><div class="quantity"><button class="minus">-</button><input type="text" value="01" class="num"><button class="plus">+</button>&#160;&#160;<button type="button" onclick="cart()" class="btn btn-primary">🛒ADD TO CART</button></div></div>
+            <div class="col-sm-3"><div class="quantity"><button class="minus">-</button><input type="text" value="01" class="num"><button class="plus">+</button>&#160;&#160;<button type="button" onclick="cart()" class="btn btn-primary">🛒ADD TO CART</button></div></div>
+        </div><br><br>
+        <div class="row">
+            <div class="col-sm-3"><img src="/Image/Malai Paneer Tikka." height="190" width="250"><img src="veg-icon.webp" width="10px" height="15px">&#160; Fruit Punch</div>
+            <div class="col-sm-3"><img src="/Image/Malai Paneer Tikka." height="190" width="250"><img src="veg-icon.webp" width="10px" height="15px">&#160; Blue Lagoon</div>
+            <div class="col-sm-3"><img src="/Image/Malai Paneer Tikka." height="190" width="250"><img src="veg-icon.webp" width="10px" height="15px">&#160; Fresh Mint Mojito</div>
+            <div class="col-sm-3"><img src="/Image/Malai Paneer Tikka." height="190" width="250"><img src="veg-icon.webp" width="10px" height="15px">&#160; Watermelon Mojito</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3"><div class="quantity"><button class="minus">-</button><input type="text" value="01" class="num"><button class="plus">+</button>&#160;&#160;<button type="button" onclick="cart()" class="btn btn-primary">🛒ADD TO CART</button></div></div>
+            <div class="col-sm-3"><div class="quantity"><button class="minus">-</button><input type="text" value="01" class="num"><button class="plus">+</button>&#160;&#160;<button type="button" onclick="cart()" class="btn btn-primary">🛒ADD TO CART</button></div></div>
+            <div class="col-sm-3"><div class="quantity"><button class="minus">-</button><input type="text" value="01" class="num"><button class="plus">+</button>&#160;&#160;<button type="button" onclick="cart()" class="btn btn-primary">🛒ADD TO CART</button></div></div>
+            <div class="col-sm-3"><div class="quantity"><button class="minus">-</button><input type="text" value="01" class="num"><button class="plus">+</button>&#160;&#160;<button type="button" onclick="cart()" class="btn btn-primary">🛒ADD TO CART</button></div></div>
+        </div><br><br>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3"><img src="/Image/Malai Paneer Tikka." height="190" width="250"><img src="veg-icon.webp" width="10px" height="15px">&#160; Water Bottle</div>
+                <div class="col-sm-3"><img src="/Image/Malai Paneer Tikka." height="190" width="250"><img src="veg-icon.webp" width="10px" height="15px">&#160; Coco Cola(250ml)</div>
+                <div class="col-sm-3"><img src="/Image/Malai Paneer Tikka." height="190" width="250"><img src="veg-icon.webp" width="10px" height="15px">&#160; Sprite(250ml)</div>
+                <div class="col-sm-3"><img src="/Image/Malai Paneer Tikka." height="190" width="250"><img src="veg-icon.webp" width="10px" height="15px">&#160; Maaza(250ml)</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3"><div class="quantity"><button class="minus">-</button><input type="text" value="01" class="num"><button class="plus">+</button>&#160;&#160;<button type="button" onclick="cart()" class="btn btn-primary">🛒ADD TO CART</button></div></div>
+                <div class="col-sm-3"><div class="quantity"><button class="minus">-</button><input type="text" value="01" class="num"><button class="plus">+</button>&#160;&#160;<button type="button" onclick="cart()" class="btn btn-primary">🛒ADD TO CART</button></div></div>
+                <div class="col-sm-3"><div class="quantity"><button class="minus">-</button><input type="text" value="01" class="num"><button class="plus">+</button>&#160;&#160;<button type="button" onclick="cart()" class="btn btn-primary">🛒ADD TO CART</button></div></div>
+                <div class="col-sm-3"><div class="quantity"><button class="minus">-</button><input type="text" value="01" class="num"><button class="plus">+</button>&#160;&#160;<button type="button" onclick="cart()" class="btn btn-primary">🛒ADD TO CART</button></div></div>
+            </div>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12"><pre><h6>Terms & Conditions..
+    - All food item prices are including GST.
+    - Order once placed can not be cancelled.
+    - Food packaging charges extra.
+    - Food preparation time 15-20 min.
+    - Food delivery time 30-50 min.
+    - we accept card, UPI and wallet payments.
+             
+                                By Order: 🍴RestoEat 
+                 </h6></pre></div></div>
+    <br>
+    <section class="footer">
+        &copy; 2024 🍴RestoEat 
+    </section>
+</body>
+<script>
+    function cart(){
+        alert("Added successfully");
+    }
+    document.addEventListener("DOMContentLoaded", function () {
+const plusBtns = document.querySelectorAll(".plus");
+const minusBtns = document.querySelectorAll(".minus");
+const inputQuantity = document.querySelectorAll("input");
+
+plusBtns.forEach((btn, index) => {
+    btn.addEventListener("click", () => {
+        inputQuantity[index].value = parseInt(inputQuantity[index].value) + 1;
+    });
+});
+
+minusBtns.forEach((btn, index) => {
+    btn.addEventListener("click", () => {
+        if (parseInt(inputQuantity[index].value) > 1) {
+            inputQuantity[index].value = parseInt(inputQuantity[index].value) - 1;
+        }
+    });
+});
+});
+
+</script>

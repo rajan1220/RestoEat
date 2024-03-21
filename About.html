@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <style>
+        .list-inline{
+             text-align: right;
+             margin-top: 0px;
+            }
+nav{
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    min-height:8vh;
+    background-color:rgb(249, 177, 43);
+    position: static;
+    width: 100%;
+    top: 10px;  
+}
+        a{
+            text-decoration: none;
+        }
+        nav a{
+            color:black;
+        }
+        nav a:hover{
+            color:#f84258;
+            text-decoration: none;
+        
+        }
+        .nav-links{
+            display:flex;
+            list-style: none;
+            width:50%;
+            justify-content: space-around;
+            letter-spacing: 2px;
+            font-weight: 600;
+            font-size:14px;
+            font-family: 'Montserrat', sans-serif;
+        }
+.container{
+    padding-top: 80px;
+}
+.font{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+</style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h3>🍴RestoEat</a></h3>
+          </div>
+  
+        <ul class="nav-links">
+            <li><a href="/Home.html">Home</a></li>
+            <li><a href="/Menu.html">Menu</a></li>
+            <li><a href="/About.html">About</a></li>
+            <li><a href="/Login.html" id="login">Login</a></li>
+            <li><a href="/Bookatable.html">Book A Table</a></li>
+          </ul>
+        </nav>
+<div class="container">
+        <div class="col-sm-12"><h3>About us.</h3></div>
+        <div class="col-sm-12"><pre>RestriEat specializes in indian cuisine in Cincinnati. 
+We are committed to serving the community with good food and great service.  
+Order a familiar favorite or try something new for pickup or delivery powered by Beyond Menu.</pre></div>
+<div class="col-sm-5"><h3>Location</h3></div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1750517.5864517696!2d75.4110207!3d31.026816300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1706877271605!5m2!1sen!2sin" width="500" height="330" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        <div class="col-sm-6"><h5 >🍴RestoEat</h5><pre class="font">
+🗺️ Lovely Proffesional University Punjab-144411
+📞 +91 8285712132
+
+                 Hours of Operation
+    Monday:    11:00 am - 10:00 pm
+    Tuesday:   11:00 am - 10:00 pm
+    Wednesday: 11:00 am - 10:00 pm
+    Thursday:  11:00 am - 10:00 pm
+    Friday:    11:00 am - 10:00 pm
+    Satarday:  10:00 am - 12:00 am
+    Sunday:    10:00 am - 12:00 am
+    <button type="button" onclick="order()" class="btn btn-primary">Order Online</button>                         <button type="button" onclick="booktable()" class="btn btn-primary">Book A Table</button>
+        </pre></div>
+        
+    </div>
+    
+
+</body>
+<section class="footer">
+    &copy; 2024 🍴RestoEat 
+</section>
+    <script>
+function booktable(){
+    window.location.href="/Bookatable.html";
+}
+function order(){
+    window.location.href="/Menu.html";
+}
+</script>
+    </html>

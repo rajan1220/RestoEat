@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <style>
+.list-inline{
+     text-align: right;
+     margin-top: 0px;
+    }
+nav{
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    min-height:8vh;
+    background-color:rgb(249, 177, 43);
+    position: static;
+    width: 100%;
+    top: 10px;
+    
+}
+a{
+    text-decoration: none;
+}
+nav a{
+    color:black;
+}
+nav a:hover{
+    color:#f84258;
+    text-decoration: none;
+
+}
+.nav-links{
+    display:flex;
+    list-style: none;
+    width:50%;
+    justify-content: space-around;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size:14px;
+    font-family: 'Montserrat', sans-serif;
+}        
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 500px;
+        margin: 50px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+    label {
+        grid-column: 1 / 2;
+    }
+    input {
+        grid-column: 2 / 3;
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        grid-column: 1 / -1;
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h3>🍴RestoEat</a></h3>
+          </div>
+  
+        <ul class="nav-links">
+            <li><a href="/Home.html">Home</a></li>
+            <li><a href="/Menu.html">Menu</a></li>
+            <li><a href="/About.html">About</a></li>
+            <li><a href="/Login.html" id="login">Login</a></li>
+            <li><a href="/Bookatable.html">Book A Table</a></li>
+          </ul>
+        </nav>
+<div class="container">
+    <center><h2>Table Booking </h2></center>
+    <form id="bookingForm" action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" required>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" required>
+
+        <label for="guests">Number of Guests:</label>
+        <input type="number" id="guests" name="guests" min="1" required>
+
+        <input type="submit" value="Book Now">
+    </form>
+</div>
+
+<script>
+ 
+   function sub(){
+        window.location.href="/Bookatable.html";
+    }
+    document.getElementById("bookingForm").addEventListener("submit", function(event) {
+        event.preventDefault(); 
+        
+        alert("Awesome!  Your booking has been confirmed. confirmetion detials sent your mobile & email."); 
+        // document.getElementById("bookingForm").reset();
+        // window.location.href = "/Home.html";
+    });
+</script>
+<section class="footer">
+    &copy; 2024 🍴RestoEat 
+</section>
+</body>
+</html>
+
