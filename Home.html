@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <style>
+nav{
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    min-height:8vh;
+    background-color:rgb(249, 177, 43);
+    position: static;
+    width: 100%;
+    top: 10px; 
+}
+a{
+    text-decoration: none;
+}
+nav a{
+    color:black;
+}
+nav a:hover{
+    color:#f84258;
+    text-decoration: none;
+
+}
+.nav-links{
+    display:flex;
+    list-style: none;
+    width:50%;
+    justify-content: space-around;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size:14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.col-md-12{
+    padding-top: 200px;
+    padding-left: 45px;
+    /* text-align: center; */
+}
+.text-justify{
+    text-align: center;
+    align-content: center;
+}
+.btn1{
+    /* color: green; */
+    background-color: lightblue;
+    font-size: 10px;
+
+}
+.text-justify1{
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+
+}
+.container{
+    padding-top: 160px;
+}
+.col-md-6{
+    padding-left: 60px;
+}
+.footer{
+    align-content: flex-end;
+}
+    </style>
+</head>
+<body>  
+      <nav>
+        <div class="logo">
+            <h3>🍴RestoEat</a></h3>
+          </div>
+  
+        <ul class="nav-links">
+          <li><a href="/Home.html">Home</a></li>
+          <li><a href="/Menu.html">Menu</a></li>
+          <li><a href="/About.html">About</a></li>
+          <li><a href="/Login.html" id="login">Login</a></li>
+          <li><a href="/Bookatable.html">Book A Table</a></li>
+        </ul>
+      </nav>
+      </div>
+      <div class="container">
+		<div class="row">
+			<div class="col-md-6" style="background-color: #f8f9fa00;">
+                <h1 class="text-justify1">Welcome to </h1>
+                <h1 class="text-justify1">RESTOEAT</h1>
+				<h1 class="display">Enjoy Our <br>Delicious Meal</h1>
+				<p class="text-justify">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet.</p>
+				<button type="button" onclick="booktable()" class="btn btn-primary">Book A Table</button>
+			</div>
+			<div class="col-md-6" style="background-color: #f8f9fa00;">
+				<img src="/Image/images-removebg-preview.png" alt="Restaurant Image" class="img-fluid" width="400px" height="400px">
+			</div>
+		</div>
+    </div>
+    
+</body>
+<section class="footer">
+    &copy; 2024 🍴RestoEat
+</div>
+</section>
+<script>
+    function booktable(){
+        window.location.href="/Bookatable.html";
+    }
+</script>
+</html>
